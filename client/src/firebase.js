@@ -8,12 +8,12 @@ import {
 } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "REDACTED_FIREBASE_API_KEY",
-  authDomain: "shuk-israel-intel.firebaseapp.com",
-  projectId: "shuk-israel-intel",
-  storageBucket: "shuk-israel-intel.firebasestorage.app",
-  messagingSenderId: "993023955749",
-  appId: "1:993023955749:web:3345c61bae2135309b80cc",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
