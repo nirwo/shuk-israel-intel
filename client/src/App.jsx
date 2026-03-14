@@ -37,7 +37,7 @@ import {
 
 const API_BASE = import.meta.env.DEV
   ? `http://${window.location.hostname}:3001/api`
-  : '/api';
+  : 'https://shuk-israel-api.fly.dev/api';
 
 function formatCurrency(agurot) {
   const shekel = agurot / 100;

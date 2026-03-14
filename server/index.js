@@ -17,7 +17,10 @@ app.use(cors({
   ],
   credentials: true,
 }));
-app.use(helmet());
+app.use(helmet({
+  crossOriginOpenerPolicy: false,
+  crossOriginEmbedderPolicy: false,
+}));
 app.use(morgan('dev'));
 app.use(express.json());
 

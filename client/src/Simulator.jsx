@@ -12,7 +12,7 @@ import {
 
 const API_BASE = import.meta.env.DEV
   ? `http://${window.location.hostname}:3001/api`
-  : '/api';
+  : 'https://shuk-israel-api.fly.dev/api';
 
 const STOCK_COLORS = [
   '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6',
